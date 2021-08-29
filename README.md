@@ -4,10 +4,10 @@
 
 - Create an environment with  `3.7` >= python >=`3.6`
 - Install packages in `requirements.txt`: `python -m pip install -r requirements.txt`
-- Build and install the package
+- Build and install the python-checkpointing
 ```
-python -m pip setup.py build
-python -m pip setup.py install
+python setup.py build
+python setup.py install
 ```
 - Run the `example.py` program
 - To reload a certain checkpoint, run the program with checkpoint name:
