@@ -1,4 +1,31 @@
+# Sudomaze's Instructions and Notes
+
+## Instructions
+
+- Create an environment with  `3.7` >= python >=`3.6`
+- Install packages in `requirements.txt`: `python -m pip install -r requirements.txt`
+- Build and install the package
+```
+python -m pip setup.py build
+python -m pip setup.py install
+```
+- Run the `example.py` program
+- To reload a certain checkpoint, run the program with checkpoint name:
+```
+# run main program
+python example.py
+# run main program from a checkpoint
+python example.py step_i-3
+```
+
+## Notes
+
+- Can't load the state within another program, so you need to have like a loader at the beginning
+- The loaded program crashes when it reaches the end of the program
+
 # Checkpointing Python Programs
+
+### Checkpointing Python Programs
 
 **TL;DR:** Here's an implementation of setjmp() and longjmp() for Python 3.6+. The
 state of the program can be serialized to disk or over the network. There are a few

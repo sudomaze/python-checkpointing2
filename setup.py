@@ -12,9 +12,9 @@ setup(
     name="function_checkpointing",
     version="0.0.0",
     ext_modules=cythonize(
-        "function_checkpointing/*.pyx", compiler_directives={"language_level": "3"},
+        "src/*.pyx", compiler_directives={"language_level": "3"},
     ),
-    packages=["function_checkpointing"],
+    packages=["src"],
     requires=["Cython"],
     python_requires=">=3.6, <=3.7",
 )
